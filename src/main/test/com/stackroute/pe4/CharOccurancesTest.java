@@ -1,21 +1,20 @@
+package com.stackroute.pe4;
+
+import com.stackroute.pe4.CharOccurances;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
 public class CharOccurancesTest {
     CharOccurances charOccurances;
-
     @Before
     public void setUp() throws Exception {
         charOccurances=new CharOccurances();
     }
-
     @After
     public void tearDown() throws Exception {
         charOccurances=null;
-
     }
     @Test
     public void checkoccurancesSuccess(){
@@ -29,5 +28,4 @@ public class CharOccurancesTest {
         int actualValue=charOccurances.checkChar("not found","a");
         assertEquals(expectedValue,actualValue);
     }
-
 }
